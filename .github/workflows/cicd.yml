@@ -16,7 +16,7 @@ jobs:
       - name: Build docker image
         run: docker build -t shonaizen/aizensync .
       - name: Login to docker hub
-        run: docker login registry-1.docker.io -u ${{ secrets.DOCKER_USERNAME}} -p ${{ secrets.DOCKER_PASSWORD }}
+        run: docker login -u ${{ secrets.DOCKER_USERNAME}} -p ${{ secrets.DOCKER_PASSWORD }}
       - name: verify login
         run: cat ~/.docker/config.json
       - name: Publish image to docker hub
@@ -29,7 +29,7 @@ jobs:
       - name: Login to docker hub
         run: sudo docker login -u ${{ secrets.DOCKER_USERNAME}} -p ${{ secrets.DOCKER_PASSWORD }}
       - name: pull image from DockerHub
-        run: docker pull registry-1.docker.io/shonaizen/aizensync:latest
+        run: sudo docker pull shonaizen/aizensync:latest
       - name: Delete old container if exists
         run: docker rm -f aizensync-container
       - name: Run docker container
