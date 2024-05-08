@@ -1,0 +1,36 @@
+name: Build&Deploy the App to EC2
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Source
+        uses: actions/checkout@v4
+      - name: Create .env file
+        run: echo "TEST_VAR=${{ secrets.TEST_VAR}}" >> .env && echo "SITE_URL=${{ secrets.SITE_URL}}" >> .env
+      - name: Build docker image
+        run: docker build -t shonaizen/aizensync .
+      - name: Login to docker hub
+        run: docker login -u ${{ secrets.DOCKER_USERNAME}} -p ${{ secrets.DOCKER_PASSWORD }}
+      - name: verify login
+        run: cat ~/.docker/config.json
+      - name: Publish image to docker hub
+        run: docker push shonaizen/aizensync:latest
+
+  deploy:
+    needs: build
+    runs-on: self-hosted
+    steps:
+      - name: Login to docker hub
+        run: sudo docker login -u ${{ secrets.DOCKER_USERNAME}} -p ${{ secrets.DOCKER_PASSWORD }}
+      - name: pull image from DockerHub
+        run: docker pull shonaizen/aizensync:latest
+      - name: Delete old container if exists
+        run: docker rm -f aizensync-container
+      - name: Run docker container
+        run: docker run -d -p 3000:3000 --name aizensync-container shonaizen/aizensync
