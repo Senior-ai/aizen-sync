@@ -29,7 +29,7 @@ jobs:
       - name: Login to docker hub
         run: sudo docker login -u ${{ secrets.DOCKER_USERNAME}} -p ${{ secrets.DOCKER_PASSWORD }}
       - name: pull image from DockerHub
-        run: docker pull shonaizen/aizensync:latest
+        run: docker pull registry-1.docker.io/shonaizen/aizensync:latest
       - name: Delete old container if exists
         run: docker rm -f aizensync-container
       - name: Run docker container
