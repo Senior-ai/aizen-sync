@@ -33,4 +33,4 @@ jobs:
       - name: Delete old container if exists
         run: sudo docker rm -f aizensync-container
       - name: Run docker container
-        run: docker run -d -p 3000:3000 --name aizensync-container shonaizen/aizensync
+        run: sudo docker run -d -p 3000:3000 --name aizensync-container shonaizen/aizensync
