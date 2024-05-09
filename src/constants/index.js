@@ -21,7 +21,7 @@ import {
   hameshakem,
   clientsite,
   threejs,
-} from "../assets";
+} from "/assets";
 
 export const navLinks = [
   {

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { staggerContainer } from '../utils/motion'
-import AboutBackgroundImage from "../assets/about_background.png";
+import AboutBackgroundImage from "/assets/about_background.png";
 
 const SectionWrapper = (Component, idName) => {
     return function HOC() {
