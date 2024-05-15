@@ -58,7 +58,7 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
-        <div className='xs:flex-row laptop:flex-col-reverse flex justify-between'>
+        <div className='xs:flex-col-reverse laptop:flex-row flex justify-between'>
 
           <form ref={formRef}
             onSubmit={handleSubmit}
