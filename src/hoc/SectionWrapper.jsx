@@ -9,11 +9,11 @@ const SectionWrapper = (Component, idName) => {
             backgroundColor: '#FFFFFF',
             backgroundImage: `url(${AboutBackgroundImage})`,
             backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
+            backgroundSize: 'contain',
         } : {};
 
         return (
-            <div style={sectionStyle}>
+            <div style={sectionStyle} className={`xl:bg-cover`}>
                 <motion.section
                     variants={staggerContainer()}
                     initial='hidden'
