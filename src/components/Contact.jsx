@@ -50,7 +50,7 @@ const Contact = () => {
   }
 
   return (
-    <div className='xl:mt-[250px] xl:mb-[350px] xl:flex-row flex-col-reverse
+    <div className='xl:mt-[250px] xl:mb-[350px] xl:flex-row
     gap-10 overflow-hidden z-20'>
       <motion.div
         variants={slideIn('left', 'tween', 0.2, 1)}
@@ -58,7 +58,7 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
-        <div className='xs:flex-col-reverse flex-row flex justify-between'>
+        <div className='xs:flex-row laptop:flex-col-reverse flex justify-between'>
 
           <form ref={formRef}
             onSubmit={handleSubmit}
