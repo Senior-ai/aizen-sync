@@ -33,7 +33,7 @@ ServiceCard.propTypes = {
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()} className='mt-36'>
+      <motion.div variants={textVariant()} className='mt-32'>
         <p className={`xs:${styles.sectionSubText} ${styles.sectionSubTextBlack}`}>Introduction</p>
         <h2 className={`xs:${styles.sectionHeadText} ${styles.sectionHeadTextBlack}`}>Overview</h2>
       </motion.div>
@@ -47,7 +47,7 @@ const About = () => {
         Over the years, I have worked on Flutter applications, different automations and Wordpress websites.
       </motion.p>
 
-      <div className='xs:mt-1 laptop:mt-4 mt-14 flex flex-wrap gap-10'>
+      <div className='xs:mt-1 laptop:mt-4 mt-14 flex flex-wrap gap-10 px-9'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index}
             {...service} />
