@@ -33,21 +33,21 @@ ServiceCard.propTypes = {
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()} className='laptop:mt-14 mt-32'>
-        <p className={styles.sectionSubTextBlack}>Introduction</p>
-        <h2 className={styles.sectionHeadTextBlack}>Overview</h2>
+      <motion.div variants={textVariant()} className='mt-34'>
+        <p className={`xs:${styles.sectionSubText}` + styles.sectionSubTextBlack}>Introduction</p>
+        <h2 className={`xs:${styles.sectionHeadText}` + styles.sectionHeadTextBlack}>Overview</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-primary text-[17px] max-w-3xl leading-[30px]'>
+        className='mt-2 text-primary text-[17px] max-w-3xl leading-[30px]'>
         I am a experienced developer based in Tel Aviv,
         specializing in building exceptional digital experiences.
         My areas of expertise include React, Node.js, MongoDB and other modern technologies.
         Over the years, I have worked on Flutter applications, different automations and Wordpress websites.
       </motion.p>
 
-      <div className='laptop:mt-4 mt-20 flex flex-wrap gap-10'>
+      <div className='xs:mt-1 laptop:mt-4 mt-14 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index}
             {...service} />

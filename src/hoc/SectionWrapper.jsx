@@ -6,11 +6,10 @@ import AboutBackgroundImage from "/assets/about_background.png";
 const SectionWrapper = (Component, idName) => {
     return function HOC() {
         const sectionStyle = idName === 'about' ? {
-            backgroundColor: '#050816',
+            backgroundColor: '#1e1e2d',
             backgroundImage: `url(${AboutBackgroundImage})`,
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
-            height: '100vh',
         } : {};
 
         return (
