@@ -15,11 +15,11 @@ const Tech = () => {
       <div className="flex flex-row flex-wrap justify-center gap-10">
         <span className="text-secondary text-center">At AizenSync, we specialize in a wide range of digital services designed to <br />
           empower your online presence and propel your business to new heights. <br />
-          Our comprehensive services are tailored to meet the diverse needs of our clients, <br />
+          Our services are tailored to meet the diverse needs of our clients, <br />
           providing innovative solutions that drive success. <br /> <br />
           Our team crafts captivating and responsive websites,
           innovative applications, <br />
-          and user-friendly web solutions, all designed to engage your audience. <br />
+          and user-friendly web solutions. <br />
           We guide you through the complex world of cloud architecture and data privacy,
           optimizing scalability and security. <br /> <br />
           Plus, our specialists ensure the reliability and performance of your DNS and email services, enhancing high-performance online communication.<br />

@@ -7,7 +7,7 @@ import { navLinks } from '../constants'
 const Footer = () => {
     const [active, setActive] = useState('');
     return (
-        <nav className={`${styles.paddingX} w-full flex items-center py-5 bottom-0  absolute bg-transparent`}>
+        <nav className={`${styles.paddingX} w-full flex items-center py-5 bottom-0  absolute bg-transparent xs:mt-5`}>
             <div className='w-full flex justify-center items-center max-w-7xl mx-auto flex-col'>
                 <ul className='list-none hidden sm:flex flex-row gap-10'>
                     {navLinks.map((link) => (

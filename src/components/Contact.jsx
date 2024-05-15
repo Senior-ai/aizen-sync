@@ -58,11 +58,11 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
-        <div className='flex-row flex justify-between'>
+        <div className='xs:flex-col-reverse flex-row flex justify-between'>
 
           <form ref={formRef}
             onSubmit={handleSubmit}
-            className='mt-12 flex flex-col gap-8 w-[55%]'
+            className='xs:w-auto xs:mt-4 mt-12 flex flex-col gap-8 w-[55%]'
           >
             <label className='flex flex-col'>
               <span className='text-white
@@ -115,7 +115,7 @@ const Contact = () => {
               {loading ? 'Sending...' : 'Send'}
             </button>
           </form>
-          <div className='mt-8 flex w-[40%] flex-col'>
+          <div className='xs:w-auto xs:mt-3 mt-8 flex w-[40%] flex-col'>
             <p className={styles.sectionHeadText} style={{ fontSize: '24px' }}>Get a project in mind?</p>
             <p className={styles.sectionSubText} style={{ fontSize: '14px', marginTop: '16px' }}>I would love to speak to you about it.<br />
               Feel free to call, send me an email or follow me in social media or simply complete the inquiry form.</p>
