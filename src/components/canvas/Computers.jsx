@@ -53,11 +53,23 @@ const ComputersCanvas = () => {
     }
   }, [])
 
+  const [initialized, setInitialized] = useState(false)
+
+  useEffect(() => {
+    if (!initialized) {
+      setInitialized(true);
+    }
+  }, [initialized]);
+
+  if (!initialized) {
+    return <div></div>
+  }
+
   return (
     <Canvas frameloop='demand'
       shadows
       camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}>
+      gl={{ preserveDrawingBuffer: true, alpha: true }}>
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}

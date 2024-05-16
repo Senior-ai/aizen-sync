@@ -118,7 +118,7 @@ const Contact = () => {
           <div className='xs:w-auto xs:mt-3 mt-8 flex laptop:w-[45%] flex-col'>
             <p className={styles.sectionHeadText} style={{ fontSize: '24px' }}>Get a project in mind?</p>
             <p className={` ${styles.sectionSubText}`} style={{ fontSize: '14px', marginTop: '16px' }}>I would love to speak to you about it.<br />
-              Feel free to call, send me an email or follow me in social media or simply complete the inquiry form.</p>
+              Feel free to call, send me an email or simply complete the inquiry form.</p>
           </div>
         </div>
 
