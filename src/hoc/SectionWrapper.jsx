@@ -12,7 +12,7 @@ const SectionWrapper = (Component, idName) => {
         } : {};
 
         return (
-            <div style={sectionStyle} className={`xl:bg-cover laptop:bg-contain`}>
+            <div style={sectionStyle} className={`laptop:bg-contain xl:bg-cover`}>
                 <motion.section
                     variants={staggerContainer()}
                     initial='hidden'
