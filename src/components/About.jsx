@@ -47,7 +47,7 @@ const About = () => {
         Over the years, I have worked on Flutter applications, different automations and Wordpress websites.
       </motion.p>
 
-      <div className='xs:mt-1 laptop:mt-4 mt-14 flex flex-wrap gap-10 laptop:px-2 px-9'>
+      <div className='xs:mt-1 laptop:mt-4 mt-14 flex flex-wrap gap-8 laptop:px-2 px-9'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index}
             {...service} />
