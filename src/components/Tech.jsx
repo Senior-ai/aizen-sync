@@ -26,7 +26,7 @@ const Tech = () => {
           We also excel in automations and developing extensions,
           streamlining your processes and expanding your online capabilities.
         </span>
-        {technologies.map((technology, index) => (
+        {technologies.map((technology) => (
           <div key={technology.name} className="w-28 h-28">
             <BallCanvas icon={technology.icon} />
           </div>

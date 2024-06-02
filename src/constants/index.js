@@ -37,6 +37,20 @@ export const navLinks = [
     title: "Contact",
   },
 ];
+export const heNavLinks = [
+  {
+    id: "about",
+    title: "עלינו",
+  },
+  {
+    id: "work",
+    title: "עבודות אחרונות",
+  },
+  {
+    id: "contact",
+    title: "יצירת קשר",
+  },
+];
 
 const services = [
   {
@@ -53,6 +67,25 @@ const services = [
   },
   {
     title: "Videos & Images Editor",
+    icon: creator,
+  },
+];
+
+const heServices = [
+  {
+    title: "מפתח אתרים",
+    icon: web,
+  },
+  {
+    title: "מפתח אפליקציות",
+    icon: mobile,
+  },
+  {
+    title: "מהנדס ענן",
+    icon: backend,
+  },
+  {
+    title: "עורך מדיה",
     icon: creator,
   },
 ];
@@ -113,6 +146,61 @@ const technologies = [
 ];
 
 const experiences = [
+  {
+    title: "Flutter Developer",
+    company_name: "Self Employed",
+    icon: logo,
+    iconBg: "#383E56",
+    date: "May 2022 - Oct 2022",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Full Stack Developer",
+    company_name: "Tech Training Labs",
+    icon: "https://media.licdn.com/dms/image/C4D0BAQGTccrIrJyLNw/company-logo_200_200/0/1630475150663/yaniv_arad_tech_training_labs_logo?e=2147483647&v=beta&t=bg7pHgGrOi81eFne-ct2UMbWyt0tKkRmosx6VJfyqv4",
+    iconBg: "#E6DEDD",
+    date: "Dec 2022 - May 2023",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Google Workspace TSR",
+    company_name: "Concentrix",
+    icon: concentrix,
+    iconBg: "#383E56",
+    date: "Nov 2022 - Aug 2023",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Associate Cloud Engineer",
+    company_name: "Concentrix",
+    icon: concentrix,
+    iconBg: "#E6DEDD",
+    date: "Jan 2023 - Present",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+];
+
+const heExperiences = [
   {
     title: "Flutter Developer",
     company_name: "Self Employed",
@@ -239,9 +327,9 @@ const projects = [
     source_code_link: "https://github.com/Senior-ai/the_meshakem",
   },
   {
-    name: "Client's site",
+    name: "OCDiamonds",
     description:
-      "A comprehensive business site that allows users to buy and offer high-end jewelry online with secure payment processing and inventory management.",
+      "A comprehensive business site that allows users to buy and offer a price for high-end jewelry online with secure payment processing and inventory management.",
     tags: [
       {
         name: "wordpress",
@@ -261,4 +349,12 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export {
+  services,
+  heServices,
+  technologies,
+  experiences,
+  heExperiences,
+  testimonials,
+  projects,
+};

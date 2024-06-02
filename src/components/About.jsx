@@ -1,9 +1,8 @@
 /* eslint-disable react/no-unknown-property */
-import React from 'react'
 import Tilt from 'react-parallax-tilt'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
-import { services } from '../constants'
+import { services, heServices } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from './../hoc';
 
@@ -30,7 +29,8 @@ ServiceCard.propTypes = {
 
 }
 
-const About = () => {
+const About = (isHE) => {
+  const newServices = isHE ? heServices : services
   return (
     <>
       <motion.div variants={textVariant()} className='mt-32'>
@@ -48,7 +48,7 @@ const About = () => {
       </motion.p>
 
       <div className='xs:mt-1 laptop:mt-4 mt-14 flex flex-wrap gap-8 laptop:px-2 px-9'>
-        {services.map((service, index) => (
+        {newServices.map((service, index) => (
           <ServiceCard key={service.title} index={index}
             {...service} />
         ))}
