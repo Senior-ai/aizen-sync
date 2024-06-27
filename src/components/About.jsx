@@ -2,7 +2,7 @@
 import Tilt from 'react-parallax-tilt'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
-import { services, heServices } from '../constants'
+import { services } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from './../hoc';
 
@@ -30,7 +30,6 @@ ServiceCard.propTypes = {
 }
 
 const About = (isHE) => {
-  const newServices = isHE ? heServices : services
   return (
     <>
       <motion.div variants={textVariant()} className='mt-32'>
@@ -40,15 +39,19 @@ const About = (isHE) => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-2 text-primary text-[17px] max-w-3xl leading-[30px]'>
-        I am a experienced developer based in Tel Aviv,
+        className={`mt-2 text-primary text-[17px] max-w-3xl leading-[30px]`}>
+        {isHE ? `אני מפתח מנוסה מתל אביב
+        שמתמקד בבניית חוויות דיגיטליות יוצאות דופן,
+        ובעל מומחיות בטכנולוגיות פיתוח שונות. לאורך השנים, עבדתי על אפליקציות, אוטומציות שונות ואתרי וורדפרס`
+          : `I am a experienced developer based in Tel Aviv,
         specializing in building exceptional digital experiences.
         My areas of expertise include React, Node.js, MongoDB and other modern technologies.
-        Over the years, I have worked on Flutter applications, different automations and Wordpress websites.
+        Over the years, I have worked on Flutter applications, different automations and Wordpress websites.`}
+
       </motion.p>
 
       <div className='xs:mt-1 laptop:mt-4 mt-14 flex flex-wrap gap-8 laptop:px-2 px-9'>
-        {newServices.map((service, index) => (
+        {services.map((service, index) => (
           <ServiceCard key={service.title} index={index}
             {...service} />
         ))}

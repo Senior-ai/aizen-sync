@@ -8,7 +8,6 @@ import {
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
@@ -21,6 +20,7 @@ import {
   hameshakem,
   clientsite,
   threejs,
+  wordpress,
 } from "../../public/assets";
 
 export const navLinks = [
@@ -66,26 +66,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Videos & Images Editor",
-    icon: creator,
-  },
-];
-
-const heServices = [
-  {
-    title: "מפתח אתרים",
-    icon: web,
-  },
-  {
-    title: "מפתח אפליקציות",
-    icon: mobile,
-  },
-  {
-    title: "מהנדס ענן",
-    icon: backend,
-  },
-  {
-    title: "עורך מדיה",
+    title: "Automations Engineer",
     icon: creator,
   },
 ];
@@ -112,8 +93,8 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Wordpress",
+    icon: wordpress,
   },
   {
     name: "Tailwind CSS",

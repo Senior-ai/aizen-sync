@@ -3,7 +3,7 @@ import { styles } from '../styles'
 import { staggerContainer } from '../utils/motion'
 import AboutBackgroundImage from "/assets/about_background.png";
 
-const SectionWrapper = (Component, idName) => {
+const SectionWrapper = (Component, idName,) => {
     return function HOC() {
         const sectionStyle = idName === 'about' ? {
             backgroundColor: '#050816 !important',

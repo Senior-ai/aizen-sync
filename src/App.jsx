@@ -13,7 +13,7 @@ const App = () => {
           <Navbar isHE={isHE} setIsHE={setIsHE} />
           <Hero isHE={isHE} />
         </div>
-        <About isHE={isHE} />
+        <About isHE={isHE} className={`${isHE ? 'rtl-grid rubik-font' : ''}`} />
         <Experience />
         <Tech />
         <Works />
