@@ -20,6 +20,7 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import wordpress from "./tech/wordpress.png;";
 
 import concentrix from "./company/concentrix.png";
 
@@ -28,6 +29,7 @@ import hameshakem from "./hameshakem.png";
 import clientsite from "./clientsite.png";
 
 export {
+  wordpress,
   logo,
   backend,
   creator,

@@ -332,7 +332,6 @@ const projects = [
 
 export {
   services,
-  heServices,
   technologies,
   experiences,
   heExperiences,
