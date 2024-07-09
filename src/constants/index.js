@@ -37,20 +37,6 @@ export const navLinks = [
     title: "Contact",
   },
 ];
-export const heNavLinks = [
-  {
-    id: "about",
-    title: "עלינו",
-  },
-  {
-    id: "work",
-    title: "עבודות אחרונות",
-  },
-  {
-    id: "contact",
-    title: "יצירת קשר",
-  },
-];
 
 const services = [
   {

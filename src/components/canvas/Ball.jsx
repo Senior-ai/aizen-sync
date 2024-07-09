@@ -1,4 +1,4 @@
-import { Suspense } from 'react'
+import { Suspense, useEffect, useState } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { Decal, Float, OrbitControls, Preload, useTexture } from '@react-three/drei';
 
@@ -26,6 +26,18 @@ const Ball = (props) => {
 
 
 const BallCanvas = ({ icon }) => {
+  const [initialized, setInitialized] = useState(false)
+
+  useEffect(() => {
+    if (!initialized) {
+      setInitialized(true);
+    }
+  }, [initialized]);
+
+  if (!initialized) {
+    return <div></div>
+  }
+
   return (
     <Canvas frameloop='demand'
       gl={{ preserveDrawingBuffer: true, alpha: true }}>

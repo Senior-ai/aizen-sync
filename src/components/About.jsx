@@ -32,7 +32,7 @@ ServiceCard.propTypes = {
 const About = (isHE) => {
   return (
     <>
-      <motion.div variants={textVariant()} className='mt-32'>
+      <motion.div variants={textVariant()} className={`xs:mt-16 laptop:mt-32`}>
         <p className={`xs:${styles.sectionSubText} ${styles.sectionSubTextBlack}`}>Introduction</p>
         <h2 className={`xs:${styles.sectionHeadText} ${styles.sectionHeadTextBlack}`}>Overview</h2>
       </motion.div>

@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
 import { styles } from '../styles'
-import { navLinks, heNavLinks } from '../constants'
+import { navLinks } from '../constants'
 import { logo, menu, close } from '../../public/assets';
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 
-const Navbar = ({ isHE, setIsHE }) => {
+const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
-  var newNavLinks = isHE ? heNavLinks : navLinks
+
 
   return (
     <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 navbar-background`}>
@@ -22,28 +22,26 @@ const Navbar = ({ isHE, setIsHE }) => {
           }}
         >
           <img src={logo} alt='logo' className='w-12 h-12 object-contain' />
-          <p className={`text-white text-[18px] font-bold cursor-pointer flex ${isHE ? 'rubik-font' : ''}`}>
-            {isHE ? '' : 'Sean'} &nbsp; <span
-              className='sm:block hidden'>| {isHE ? 'פתרונות טכנולוגיים' : 'Tech Solutions'} </span>
+          <p className={`text-white text-[18px] font-bold cursor-pointer flex`}>
+            Sean &nbsp; <span
+              className='sm:block hidden'>| Tech Solutions </span>
           </p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
-          {newNavLinks.map((link) => (
+          {navLinks.map((link) => (
             <li key={link.id} >
               <a href={`#${link.id}`} className={
                 `${active === link.title ? 'text-white' : 'text-secondary'} 
-              hover:text-white text-[18px] font-medium cursor-pointer ${isHE ? 'rubik-font' : ''}`}
+              hover:text-white text-[18px] font-medium cursor-pointer`}
                 onClick={() => setActive(link.title)}
               >
                 {link.title}
               </a>
             </li>
           ))}
-          <li className={`fi ${isHE ? 'fi-gb' : 'fi-il'}`} onClick={() => setIsHE(!isHE)}></li>
         </ul>
         <div className='sm:hidden flex flex-1 justify-end items-center '>
           <div className='gap-6 flex flex-row'>
-            <span className={`fi ${isHE ? 'fi-gb' : 'fi-il'}`} onClick={() => setIsHE(!isHE)}></span>
             <img
               src={toggle ? close : menu}
               alt="menu"
@@ -57,7 +55,7 @@ const Navbar = ({ isHE, setIsHE }) => {
            absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
             <ul className='list-none flex justify-end
             items-start flex-col gap-4'>
-              {newNavLinks.map((link) => (
+              {navLinks.map((link) => (
                 <li key={link.id} >
                   <a href={`#${link.id}`} className={
                     `${active === link.title ? 'text-white' : 'text-secondary'} 
