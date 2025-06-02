@@ -44,11 +44,11 @@ const services = [
     icon: web,
   },
   {
-    title: "Flutter Developer",
+    title: "SEO Optimizer",
     icon: mobile,
   },
   {
-    title: "Associate Cloud Engineer",
+    title: "Cloud Engineer",
     icon: backend,
   },
   {
@@ -120,10 +120,10 @@ const experiences = [
     iconBg: "#383E56",
     date: "May 2022 - Oct 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Developing and maintaining cross-platform applications using Flutter and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Implementing responsive design and ensuring cross-platform compatibility.",
+      "Participating in meetings and providing constructive feedback and my professional opinion to project managers, business owners and clients.",
     ],
   },
   {
@@ -157,23 +157,7 @@ const experiences = [
     company_name: "Concentrix",
     icon: concentrix,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-];
-
-const heExperiences = [
-  {
-    title: "Flutter Developer",
-    company_name: "Self Employed",
-    icon: logo,
-    iconBg: "#383E56",
-    date: "May 2022 - Oct 2022",
+    date: "Aug 2023 - Nov 2024",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -182,44 +166,18 @@ const heExperiences = [
     ],
   },
   {
-    title: "Full Stack Developer",
-    company_name: "Tech Training Labs",
-    icon: "https://media.licdn.com/dms/image/C4D0BAQGTccrIrJyLNw/company-logo_200_200/0/1630475150663/yaniv_arad_tech_training_labs_logo?e=2147483647&v=beta&t=bg7pHgGrOi81eFne-ct2UMbWyt0tKkRmosx6VJfyqv4",
-    iconBg: "#E6DEDD",
-    date: "Dec 2022 - May 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Google Workspace TSR",
+    title: "GCP Consultant",
     company_name: "Concentrix",
     icon: concentrix,
     iconBg: "#383E56",
-    date: "Nov 2022 - Aug 2023",
+    date: "Dec 2024 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
-  },
-  {
-    title: "Associate Cloud Engineer",
-    company_name: "Concentrix",
-    icon: concentrix,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+  }
 ];
 
 const testimonials = [
@@ -312,7 +270,7 @@ const projects = [
       },
     ],
     image: clientsite,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://ocdiamonds.com/",
   },
 ];
 
@@ -320,7 +278,6 @@ export {
   services,
   technologies,
   experiences,
-  heExperiences,
   testimonials,
   projects,
 };
