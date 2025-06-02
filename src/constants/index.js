@@ -120,10 +120,11 @@ const experiences = [
     iconBg: "#383E56",
     date: "May 2022 - Oct 2022",
     points: [
-      "Developing and maintaining cross-platform applications using Flutter and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-platform compatibility.",
-      "Participating in meetings and providing constructive feedback and my professional opinion to project managers, business owners and clients.",
+      "Developing and maintaining cross-platform mobile applications using Flutter and Dart.",
+      "Integrating Firebase services for backend functionalities like authentication, database, and storage.",
+      "Building responsive UIs based on Material Design and Cupertino guidelines.",
+      "Collaborating with UI/UX designers to translate wireframes and mockups into functional app screens.",
+      "Managing application state using providers like Provider or Riverpod.",
     ],
   },
   {
@@ -133,10 +134,11 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Dec 2022 - May 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Designing and developing RESTful APIs using Node.js and Express.js.",
+      "Building interactive and responsive user interfaces with React.js, Redux, and modern JavaScript (ES6+).",
+      "Working with databases like MongoDB and PostgreSQL, including schema design and query optimization.",
+      "Implementing authentication and authorization mechanisms (e.g., JWT, OAuth).",
+
     ],
   },
   {
@@ -146,10 +148,11 @@ const experiences = [
     iconBg: "#383E56",
     date: "Nov 2022 - Aug 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Providing technical support and troubleshooting for Google Workspace applications (Gmail, Drive, Calendar, Meet, Cloud Identity, etc.).",
+      "Assisting enterprise clients with configuration, and administration of Google Workspace services.",
+      "Diagnosing and resolving issues related to email deliverability, data migration, and security policies.",
+      "Guiding businesses on best practices for utilizing Google Workspace features to enhance productivity and collaboration.",
+ 
     ],
   },
   {
@@ -159,23 +162,22 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Aug 2023 - Nov 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Advising for enterprise clients the best practices for implementation of different services and management of cloud infrastructure on GCP.",
+      "Reproducing bugs and providing solutions for different services on GCP.",
+      "Monitoring cloud resource utilization, performance, and security.",
+      "Providing consulting for cloud-based applications and services, troubleshooting connectivity and performance issues.",
     ],
   },
   {
     title: "GCP Consultant",
-    company_name: "Concentrix",
+    company_name: "Cognizant",
     icon: concentrix,
     iconBg: "#383E56",
     date: "Dec 2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Advising enterprise clients on Google Cloud Platform (GCP) solutions, with a focus on AI/ML, BigData (BigQuery, Dataflow, Dataproc), Serverless (Cloud Functions, Cloud Run), and Database services (Cloud SQL, Spanner, Bigtable).",
+      "Developing and delivering technical workshops and training sessions on GCP's AI, BigData, Serverless, and Database services for client teams.",
+      "Recommending optimizations for clients\' in existing GCP environments for performance, cost, and security, particularly for their AI/ML models, data pipelines, serverless applications, and database deployments.",
     ],
   }
 ];
